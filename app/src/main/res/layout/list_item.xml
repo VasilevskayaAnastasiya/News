@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ImageNews"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            style="@style/newsStyle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/TitleTextNews"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/ContentTextNews"
+            tools:background="@color/green"/>
+
+        <TextView
+            android:id="@+id/TitleTextNews"
+            style="@style/newsStyle"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toRightOf="@id/ImageNews"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/ImageNews"
+            android:text="title1 rggg ergergerfhj cuewyfgueyrg fcueyrgfueryf eriyh"/>
+
+        <TextView
+            android:id="@+id/ContentTextNews"
+            style="@style/newsStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TitleTextNews"
+            android:text="fdjvnadlvbahbvaubvcaubvc efwf wefw efwf wrfgergerfw efwefw rfwr fgerg wrf w f wef wrf wrgfergergetrger gergerg ergetrgerg erg"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
